@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="refreshKnowlages:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>refreshKnowlages</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="mavenProJ-1.0.1.war">
+      <element id="artifact" artifact-name="refreshKnowlages:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,10 @@
+2023-03-06 22:26:36 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
+2023-03-06 22:28:39 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
+2023-03-06 22:53:15 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
+2023-03-06 22:53:15 DEBUG PhoneService:12 - 783423
+2023-03-06 22:54:54 DEBUG PhoneController:15 - Phone(id=7, type=mobile, number=null)
+2023-03-06 22:54:54 ERROR PhoneController:17 - Phone Number isn NULL
+2023-03-06 22:54:54 DEBUG PhoneService:12 - 
+2023-03-07 19:58:20 DEBUG PhoneController:15 - Phone(id=7, type=mobile, number=null)
+2023-03-07 19:58:20 ERROR PhoneController:17 - Phone Number isn NULL
+2023-03-07 19:58:20 DEBUG PhoneService:12 - 
