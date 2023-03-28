@@ -1,0 +1,181 @@
+body {
+    background-image: url("/majdan-nezalezhnosti.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    /*background-color: #000000;*/
+    /*background: linear-gradient(white, lightgreen);*/
+    /*background-repeat: no-repeat;*/
+    /*background-attachment: fixed;*/
+
+/*    Margins - space AROUND an element */
+    margin: 0px;
+}
+
+a {
+    background-color: green;
+    background: linear-gradient(to bottom, darkslategrey, white);
+
+    border-style: groove;
+    border-width: 4px;
+    border-color: white;
+    font-family: "Minion Pro";
+    /*font-style: italic;*/
+    font-weight: bold;
+    /*text-decoration: underline;*/
+
+}
+
+h1 {
+    color: #eeeeee;
+    width: 300px;
+    font-family: "press Start 2P", Consolas, sans-serif;
+    text-shadow: -5px 3px 5px black;
+}
+h1:hover {
+    text-shadow: -5px 3px 5px black, 0px -5px 15px yellow;
+
+    box-shadow: 7px 7px 7px skyblue;
+
+}
+
+p {
+    background-color: #222222;
+    background: linear-gradient(black, lightgreen);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: yellow;
+
+    font-family: Academy, "Alex Brush", Arno Pro;
+    font-style: italic;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+    /*text-decoration: green underline;*/
+    /*text-decoration: underline wavy;*/
+    /*text-decoration: dotted underline ;*/
+    /*text-decoration: dotted underline ;*/
+
+    /*border*/
+    border-style: double;
+    border-width: 8px;
+    border-color: gold;
+    border-radius: 12px;
+    padding: 10px;
+    padding-left: 121px;
+}
+
+p2 {
+    background-color: #eeeeee;
+    font-size: 11px;
+    clear: both;
+
+}
+
+#p1 {
+    color: olive;
+}
+
+#p2 {
+    color: yellow
+}
+
+#p3 {
+    color: green;
+}
+
+#p4 {
+    color: blue
+}
+#p7 {
+    color: black;
+    border-color: #eeeeee;
+    /*background-color: darkslategrey;*/
+
+}
+
+.odd {
+    color: red;
+}
+
+.even {
+    color: aqua;
+}
+
+.headerLink {
+    background-color: yellow;
+    color: black;
+    font-size: 21px;
+    padding: 12px;
+}
+
+#box1{
+    border: 5px solid;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    background: greenyellow;
+    padding: 10px;
+    margin-top: 33px;
+    margin-left: 33px;
+    margin-right: 11%;
+    margin-bottom: 5%;
+}
+#box2{
+    border: 5px solid;
+    width: 200px;
+    height: 200px;
+    font-size: 20px;
+    background: dodgerblue;
+    margin-right: auto;
+    margin-left: auto;
+}
+img{
+    float: right;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    border: 1px solid;
+    font-size: 40px;
+    text-align: center;
+    background: tomato;
+
+    float: right;
+}
+
+#box1 {
+    border: 5px solid;
+    width: 100px;
+    height: 100px;
+    font-size:100px;
+    text-align: center;
+
+    transform: translateX(50px);
+    transform: translateY(50px);
+    transform: translate(50px,50px);
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    transform: rotateZ(180deg);
+    transform: scale(1,2);
+    transform: skew(12deg, 11deg);
+    transform: skewX(5deg);
+    transform: skewY(3deg);
+    transform: skew(3deg, 3deg);
+
+    transform: matrix(1,0,0,1,0,0);
+
+/*
+    scaleX(),
+    skewY(),
+    skewX(),
+    scale(),
+    translateX(),
+    translateY()
+
+*/
+
+}
+
+
+
