@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>buttons</title>
+</head>
+<body>
+
+<a href="index.html" target="_self">
+    <button><- Click me</button>
+    <br><br>
+</a>
+<a href="https://translate.google.com" target="_blank">
+    <button disabled>Try to click me - i'm disabled</button>
+    <br><br>
+    <button style="background: #333333; color:lightblue; border-radius:5px">I'm colored! You can't do not click me
+    </button>
+</a>
+<br><br><br>
+
+<button onclick="doSomething()" style="background: black; color:greenyellow; border-radius:12px" >I'm with function! Click me! </button>
+<br>
+<button onclick="doSomethingMore()" style="background: black; color:greenyellow; border-radius:12px">Let's say hello! :)</button>
+
+<p id="test">Hello</p>
+<p id="test2">Step forward</p>
+
+<script>
+    function doSomething() {
+        document.getElementById("test").innerHTML = "I told you :)) Don't be afraid!"
+    }
+
+    function doSomethingMore() {
+        document.getElementById("test2").innerHTML = "Hello JS!!!"
+    }
+
+</script>
+</body>
+</html>
