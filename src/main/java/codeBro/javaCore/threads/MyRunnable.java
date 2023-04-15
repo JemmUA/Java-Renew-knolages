@@ -1,0 +1,18 @@
+package codeBro.javaCore.threads;
+
+public class MyRunnable implements Runnable{
+    @Override
+    public void run() {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Thread #2: " + i);
+            try {
+                Thread.sleep(100);
+//                System.out.println(1/0); // exception do not interrupt other threads
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
+        }
+        System.out.println("Thread #2 is finished");
+
+    }
+}
