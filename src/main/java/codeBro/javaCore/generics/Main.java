@@ -31,6 +31,10 @@ public class Main {
         MyGenerics<Character,Float> charG = new MyGenerics<>('C');
         MyGenerics<String,Byte> strG = new MyGenerics<>("String");
 
+        MyGenerics<String, String> strings = new MyGenerics<>("first", "second");
+        System.out.println(strings.getAll()[0]);
+        System.out.println(strings.getAll()[1]);
+
         ArrayList<String> friends = new ArrayList<>();
         HashMap<String,String> coworkers = new HashMap<>();
 

@@ -1,7 +1,8 @@
 package tests.service;
 
+import hilelll.tests.service.EmailService;
 import org.junit.jupiter.api.*;
-import tests.exception.WrongEmailException;
+import hilelll.tests.exception.WrongEmailException;
 
 import static org.junit.jupiter.api.Assertions.*;
 

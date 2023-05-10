@@ -32,16 +32,18 @@ public class Main {
         Calendar date = Calendar.getInstance();
         date.set(Calendar.YEAR, 2023);
         date.set(Calendar.MONTH, Calendar.APRIL);
-        date.set(Calendar.DAY_OF_MONTH,13);
-        date.set(Calendar.HOUR_OF_DAY,18);
-        date.set(Calendar.MINUTE,00);
-        date.set(Calendar.SECOND, 1);
+        date.set(Calendar.DAY_OF_MONTH,19);
+        date.set(Calendar.HOUR_OF_DAY,9);
+        date.set(Calendar.MINUTE,11);
+        date.set(Calendar.SECOND, 0);
         date.set(Calendar.MILLISECOND,0);
+//        System.out.println(date.getTime());
+
 
 //        timer.schedule(task,3000);
 //        timer.schedule(task,date.getTime());
-//        timer.scheduleAtFixedRate(task,0, 1000);
-        timer.scheduleAtFixedRate(task,date.getTime(), 1000);
+//        timer.scheduleAtFixedRate(task,0, 1000); // timer starts immediately
+        timer.scheduleAtFixedRate(task,date.getTime(), 1000); // timer starts at preset time
 
     }
 }

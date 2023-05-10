@@ -1,13 +1,13 @@
 package tests.service;
 
+import hilelll.tests.service.EmailService;
+import hilelll.tests.service.OrderService;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mock;
-import org.mockito.Mockito;
-import tests.Entity.Order;
-import tests.exception.WrongEmailException;
+import hilelll.tests.Entity.Order;
+import hilelll.tests.exception.WrongEmailException;
 
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.BDDMockito.then;
 import static org.mockito.Mockito.*;
 
 class OrderServiceTest {

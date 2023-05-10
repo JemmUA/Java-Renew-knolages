@@ -6,5 +6,8 @@ public class ExeForIntellijIdea {
     * 2. Main Class: select the class containing your main method
     * 3. OK
     *
+    * https://www.youtube.com/watch?v=p79cy6hpHe8&list=PLZPZq0r_RZOMhCAyywfnYLlrjiVOkdAI1&index
+    * https://www.youtube.com/watch?v=jKlyHG-zbjk&list=PLZPZq0r_RZOMhCAyywfnYLlrjiVOkdAI1&index
+    *
     * */
 }

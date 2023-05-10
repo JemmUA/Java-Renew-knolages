@@ -1,6 +1,6 @@
 package codeBro.javaCore.generics;
 
-public class MyGenerics<A,B extends Number>{
+public class MyGenerics<A,B>{
     A a;
     B b;
 
@@ -24,4 +24,7 @@ public class MyGenerics<A,B extends Number>{
         return a;
     }
 
+    public Object[] getAll(){
+        return new Object[]{a, b};
+    }
 }

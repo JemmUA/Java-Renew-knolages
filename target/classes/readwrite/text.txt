@@ -1,3 +1,2 @@
-
-hello new file
-kuku
+write and read text
+ok

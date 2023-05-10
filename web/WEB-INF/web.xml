@@ -16,7 +16,7 @@
 
     <servlet>
         <servlet-name>Goodbye</servlet-name>
-        <servlet-class>servlets.servlet.GoodbyeServlet</servlet-class>
+        <servlet-class>hilelll.servlets.servlet.GoodbyeServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
@@ -27,7 +27,7 @@
 
     <servlet>
     <servlet-name>Welcome</servlet-name>
-    <servlet-class>servlets.servlet.WelcomeServlet</servlet-class>
+    <servlet-class>hilelll.servlets.servlet.WelcomeServlet</servlet-class>
     </servlet>
     <servlet-mapping>
     <servlet-name>Welcome</servlet-name>

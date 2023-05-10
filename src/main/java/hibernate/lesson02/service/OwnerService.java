@@ -1,4 +1,0 @@
-package hibernate.lesson02.service;
-
-public class OwnerService {
-}

@@ -3,8 +3,10 @@ import codeBro.javaCore.entity.Driver;
 public class Exercises {
 
     public static String event = "Monaco GP";
-        public static void main(String[] args) {
+        public static void main(String[] args) throws InterruptedException {
 
+//            Thread.sleep(1000);
+            System.out.println(Thread.currentThread().getName());
             Driver driver1 = new Driver("John",22,"B");
             Driver driver2 = new Driver("Alex", 33, "A");
 
