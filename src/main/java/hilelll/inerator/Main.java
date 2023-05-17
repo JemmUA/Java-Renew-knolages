@@ -12,6 +12,7 @@ public class Main {
         List<String> names2 = List.of("Alla","Mikola","Bob","Ken","Kim","John");
         ArrayList<String> names3 = new ArrayList<>(Arrays.asList("Alla","Mikola","Bob","Ken","Kim","John"));
         ArrayList<String> names4 = new ArrayList<>(List.of(names));
+        ArrayList<String> names5 = new ArrayList<>(names2);
 
         // Iterator
         Iterator<String> iteratorNames = names3.iterator();
