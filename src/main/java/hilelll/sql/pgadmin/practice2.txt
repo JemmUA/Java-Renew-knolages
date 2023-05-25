@@ -1,0 +1,102 @@
+create table racing.drivers(
+id serial constraint drivers_pk primary key,
+	name varchar(30),
+	email varchar (40),
+	age int,
+	wins int,
+	top5 int,
+	top10 int,
+	top20 int
+)
+
+create table racing.statuses (
+id serial constraint roles_pk primary key,
+	role varchar (12)
+)
+
+create table racing.cars
+(id serial constraint cars_pk primary key,
+ model varchar (40)
+)
+
+DROP table racing.driver_status
+
+create table racing.driver_status (
+driver_id int, constraint fk_driver FOREIGN KEY (driver_id) REFERENCES racing.drivers (id),
+status_id int, constraint fk_status FOREIGN KEY (status_id) REFERENCES racing.statuses (id)
+)
+
+
+create table racing.driver_status (
+	driver_id int REFERENCES racing.drivers (id) ON DELETE CASCADE,
+	status_id int REFERENCES racing.statuses (id) ON DELETE CASCADE
+)
+
+alter table racing.statuses
+rename column role to status;
+
+
+
+alter table racing.drivers
+rename column top3 to top20;
+
+alter table racing.drivers
+alter column top5 type int using top5::bigint;
+
+alter table racing.drivers
+add column top3 int;
+
+
+alter table racing.drivers
+add top5 varchar(10) ;
+
+select * from racing.drivers;
+
+alter table racing.drivers
+add column races int;
+
+alter table racing.drivers
+drop column races;
+
+
+alter table racing.cars 
+add column driver_id int;
+
+
+drop table roles
+
+
+insert into racing.drivers (name) values ('Alex');
+insert into racing.drivers (name) values ('John');
+
+insert into racing.statuses (status) values ('user');
+insert into racing.statuses (status) values ('admin');
+insert into racing.statuses (status) values ('moderator');
+select * from racing.statuses;
+
+insert into racing.cars (model) values ('Ferrari')
+
+insert into racing.driver_status (driver_id, status_id) values (1,1);
+insert into racing.driver_status (driver_id, status_id) values (1,2);
+insert into racing.driver_status (driver_id, status_id) values (1,3);
+insert into racing.driver_status (driver_id, status_id) values (2,1);
+insert into racing.driver_status (driver_id, status_id) values (2,2);
+insert into racing.driver_status (driver_id, status_id) values (3,1);
+insert into racing.driver_status (driver_id, status_id) values (4,1);
+insert into racing.driver_status (driver_id, status_id) values (4,2);
+
+select * from racing.driver_status
+
+
+select * from racing.cars 
+select * from racing.statuses;
+select * from racing.drivers;
+
+delete from racing.drivers where id = 3;
+
+INSERT INTO racing.cars (model) values ('bnv')
+UPDATE racing.cars set model = 'BMW' where model = 'bnv'
+
+SELECT d.name, d.email, d.wins, s.status as stat FROM racing.drivers as d 
+inner join racing.driver_status ds ON d.id = ds.driver_id
+inner join racing.statuses s ON s.id = ds.status_id
