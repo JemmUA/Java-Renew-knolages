@@ -39,6 +39,15 @@ public class Main {
      *      ALTER TABLE racing.drivers
      *      ALTER COLUMN top5 TYPE int USING top5::integer;
      *
+     *      ALTER TABLE racing.cars
+     *      ADD FOREIGN KEY (driver_id) REFERENCES racing.drivers(id)
+     *
+     *      ALTER TABLE racing.cars
+     *      DROP FOREIGN KEY cars_driver_id_fkey;
+     *
+     *      ALTER TABLE racing.statuses
+     *      ALTER COLUMN status TYPE varchar USING status::varchar (20);
+     *
      * DML
      * Data manipulation language
      * (operations with data)
@@ -80,7 +89,7 @@ public class Main {
      *
      * C    INSERT INTO table (id, name) VALUES (1, 'ALEX');
      * R    SELECT * FROM table;
-     * U    UPDATE table SET column_name = 20;
+     * U    UPDATE table SET column_name = 20; // where!!!
      * D    DELETE FROM table;
      *
      * WARNING!
@@ -93,9 +102,9 @@ public class Main {
      * JOIN
      * INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN
      *
-     * SELECT d.name, d.email, d.wins, s.status as stat FROM racing.drivers as d
-     * inner join racing.driver_status ds ON d.id = ds.driver_id
-     * inner join racing.statuses s ON s.id = ds.status_id
+     * SELECT d.name as 'Ім'я', d.email, d.wins, s.status as stat FROM racing.drivers as d
+     * INNER JOIN racing.driver_status ds ON d.id = ds.driver_id
+     * INNER JOIN racing.statuses s ON s.id = ds.status_id
      */
 
     public static void main(String[] args) {
