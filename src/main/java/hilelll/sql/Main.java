@@ -105,6 +105,45 @@ public class Main {
      * SELECT d.name as 'Ім'я', d.email, d.wins, s.status as stat FROM racing.drivers as d
      * INNER JOIN racing.driver_status ds ON d.id = ds.driver_id
      * INNER JOIN racing.statuses s ON s.id = ds.status_id
+     *
+     * UNION //unique values
+     * UNIION ALL // all values
+     *
+     * //get values in single column
+     *
+     * SELECT name from racing.drivers
+     * UNION
+     * SELECT model from racing.cars
+     *
+     *
+     * DISTINCT
+     * SELECT DISTINCT column1, column2, ...
+     * FROM table_name;
+     *
+     * CREATE INDEX email_index ON users(email);
+     * DROP INDEX email_index;
+     *
+     * CREATE TRIGGER user_trigger
+     * AFTER INSERT OR DELETE ON users
+     * FOR EACH ROW EXECUTE PROCEDURE update_user_role();
+     *
+     * CREATE OR REPLACE FUNCTION update_user_role() RETURNS TRIGGER AS $$
+     * DECLARE
+     * 	cut_id int;
+     * 	cut_role_id int;
+     * BEGIN
+     * 	IF TG_OP = 'INSERT' THEN
+     * 		cut_id = NEW.id;
+     * 		cut_role_id = (SELECT id FROM roles WHERE name = 'USER');
+     * 		INSERT INTO user_role(user_id, role_id) VALUES (cut_id, cut_role_id);
+     * 		RETURN NEW;
+     * 	ELSEIF TG_OP = 'DELETE' THEN
+     * 		cut_id = OLD.id;
+     * 		DELETE FROM user_role WHERE user_id = cut_id;
+     * 		RETURN OLD;
+     * 	END IF;
+     * END;
+     * $$ LANGUAGE plpgsql;
      */
 
     public static void main(String[] args) {

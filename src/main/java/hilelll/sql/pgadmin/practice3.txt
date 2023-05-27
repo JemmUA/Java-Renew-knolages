@@ -1,0 +1,48 @@
+select * from racing.drivers
+select * from racing.cars
+
+alter table racing.drivers
+add column surname varchar (40);
+
+alter table racing.cars
+add foreign key (driver_id) references racing.drivers(id)
+
+insert into racing.drivers (name) values ('Kimi');
+update racing.cars set driver_id = 1 where id = 1;
+update racing.cars set driver_id = 5 where id = 4;
+update racing.cars set driver_id = 3 where id = 3;
+update racing.cars set driver_id = 2 where id = 2;
+
+
+select d.id, d.name, c.model from racing.drivers as d
+inner join racing.cars as c ON d.id = c.driver_id;
+
+select d.id, d.name, ds.status_id from racing.drivers as d
+full join racing.driver_status as ds ON d.id = ds.driver_id;
+
+select d.id, d.name, s.status from racing.drivers as d
+full join racing.statuses as s ON  s.id = d.id ;
+
+select d.id, d.name, s.status as "Ступінь крутизни", d.wins from racing.drivers as d
+inner join racing.driver_status ds ON d.id = ds.driver_id
+inner join racing.statuses s ON s.id = ds.status_id
+
+update racing.drivers set name = 'Dave' where id = 6;
+
+update racing.drivers set wins = 3 where id = 1;
+update racing.drivers set wins = 5 where id = 2;
+update racing.drivers set wins = 4 where id = 3;
+update racing.drivers set wins = 1 where id = 5;
+
+insert into racing.drivers (email, age) values ('3@d.d',55);
+
+insert into racing.driver_status (driver_id, status_id) values (5, 2);
+
+update racing.statuses set status = 'adiministrator' where status = 'admin';
+
+alter table racing.statuses
+alter column status type varchar using status::varchar (20);
+
+SELECT name from racing.drivers
+UNION
+SELECT model from racing.cars

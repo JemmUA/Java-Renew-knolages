@@ -1,0 +1,21 @@
+CREATE TRIGGER user_trigger
+AFTER INSERT OR DELETE ON users
+FOR EACH ROW EXECUTE PROCEDURE update_user_role();
+
+CREATE OR REPLACE FUNCTION update_user_role() RETURNS TRIGGER AS $$
+DECLARE
+	cut_id int;
+	cut_role_id int;
+BEGIN
+	IF TG_OP = 'INSERT' THEN
+		cut_id = NEW.id;
+		cut_role_id = (SELECT id FROM roles WHERE name = 'USER');
+		INSERT INTO user_role(user_id, role_id) VALUES (cut_id, cut_role_id);
+		RETURN NEW;
+	ELSEIF TG_OP = 'DELETE' THEN
+		cut_id = OLD.id;
+		DELETE FROM user_role WHERE user_id = cut_id;
+		RETURN OLD;
+	END IF;
+END;
+$$ LANGUAGE plpgsql;
