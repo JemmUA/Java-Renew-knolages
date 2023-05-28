@@ -1,7 +1,7 @@
-package hilelll.jdbc.service;
+package hilelll.jdbc.practice1.service;
 
-import hilelll.jdbc.util.Databese;
-import hilelll.jdbc.entity.User;
+import hilelll.jdbc.practice1.util.Databese;
+import hilelll.jdbc.practice1.entity.User;
 
 import java.sql.*;
 import java.util.ArrayList;

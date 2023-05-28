@@ -1,4 +1,4 @@
-package hilelll.jdbc.util;
+package hilelll.jdbc.practice1.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

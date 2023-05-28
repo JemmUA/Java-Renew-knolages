@@ -1,18 +1,17 @@
-package hilelll.jdbc.entity;
+package hilelll.jdbc.practice2.entity;
 
 import lombok.*;
-
-@Getter
 @Setter
-@NoArgsConstructor
+@Getter
 @AllArgsConstructor
+@NoArgsConstructor
 @ToString
-public class User {
+public class Driver {
     private int id;
     private String name;
     private String surname;
-    private String email;
     private String password;
-    private int age;
+    private String email;
+    private Integer age;
 
 }

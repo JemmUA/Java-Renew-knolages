@@ -1,24 +1,40 @@
 package hilelll.jdbc;
 
-import hilelll.jdbc.entity.User;
-import hilelll.jdbc.service.UserService;
+import hilelll.jdbc.practice2.entity.Driver;
+import hilelll.jdbc.practice2.service.DriverService;
+import hilelll.jdbc.practice2.util.Database;
 
-import java.util.List;
+import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-//        Connection connection = Databese.getConnection();
-        UserService userService = new UserService();
-        List<User> users = userService.getAll();
-        users.forEach(System.out::println);
+        /**
+         * STRUCTURE:
+         * Java Application
+         * JDBC APi
+         * Driver Manager
+         * Diver Driver Driver ...
+         * DB DB DB ...
+         *
+         * Interaction with database:
+         * Statement, Prepared Statement, Callable Statement
+         *
+         */
 
-        User user = new User();
-        user.setName("Igor");
-        user.setSurname("Petrenko");
-        user.setEmail("igor@mail.ua");
-        user.setPassword("hfuieh476876w(");
-        user.setAge(22);
+//        Connection connection = Database.getConnection();
 
-        userService.save(user);
+        DriverService driverService = new DriverService();
+
+
+        Driver driver = new Driver();
+        driver.setName("Lens");
+        driver.setSurname("Sirell");
+        driver.setEmail("ls@mail.ua");
+        driver.setPassword("6534");
+        driver.setAge(19);
+//        driverService.save(driver);
+//        driverService.deleteById(7);
+        driverService.updateById(13, driver);
+        driverService.getAll().forEach(System.out::println);
     }
 }
