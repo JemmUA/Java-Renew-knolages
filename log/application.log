@@ -50,3 +50,916 @@
 2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
 2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
 2023-06-04 20:19:57 DEBUG JdbcCoordinatorImpl:170 - HHH000420: Closing un-released batch
+2023-06-04 20:34:59 DEBUG logging:28 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2023-06-04 20:34:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2023-06-04 20:34:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2023-06-04 20:34:59 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2023-06-04 20:34:59 INFO  Version:44 - HHH000412: Hibernate ORM core version 5.6.10.Final
+2023-06-04 20:34:59 DEBUG Environment:199 - HHH000206: hibernate.properties not found
+2023-06-04 20:35:00 DEBUG LocalXmlResourceResolver:63 - Interpreting public/system identifier : [-//Hibernate/Hibernate Configuration DTD//EN] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2023-06-04 20:35:00 DEBUG LocalXmlResourceResolver:87 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2023-06-04 20:35:00 DEBUG JaxbCfgProcessor:117 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2023-06-04 20:35:00 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2023-06-04 20:35:00 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2023-06-04 20:35:00 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2023-06-04 20:35:00 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2023-06-04 20:35:00 DEBUG Configuration:672 - Building session factory using provided StandardServiceRegistry
+2023-06-04 20:35:00 DEBUG RegionFactoryInitiator:118 - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+2023-06-04 20:35:00 DEBUG RegionFactoryInitiator:49 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2023-06-04 20:35:00 INFO  Version:56 - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@eda25e5
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration boolean -> org.hibernate.type.BooleanType@eda25e5
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@eda25e5
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@66565121
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@35f26e72
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration yes_no -> org.hibernate.type.YesNoType@6fe1b4fb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@1e0f9063
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration byte -> org.hibernate.type.ByteType@1e0f9063
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@1e0f9063
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration character -> org.hibernate.type.CharacterType@3ed242a4
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration char -> org.hibernate.type.CharacterType@3ed242a4
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@3ed242a4
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@13f95696
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration short -> org.hibernate.type.ShortType@13f95696
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@13f95696
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration integer -> org.hibernate.type.IntegerType@ebaa6cb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration int -> org.hibernate.type.IntegerType@ebaa6cb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@ebaa6cb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@66fdec9
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration long -> org.hibernate.type.LongType@66fdec9
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@66fdec9
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@576f63f6
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration float -> org.hibernate.type.FloatType@576f63f6
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@576f63f6
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6e35bc3d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration double -> org.hibernate.type.DoubleType@6e35bc3d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@6e35bc3d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@1b73be9f
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@1b73be9f
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@56f0cc85
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@56f0cc85
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration string -> org.hibernate.type.StringType@59d2400d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.String -> org.hibernate.type.StringType@59d2400d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@10b9db7b
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@305a0c5f
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration url -> org.hibernate.type.UrlType@74960bfa
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@74960bfa
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration Duration -> org.hibernate.type.DurationType@7f36662c
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@7f36662c
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration Instant -> org.hibernate.type.InstantType@5f9678e1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@5f9678e1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@6d9f7a80
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@6d9f7a80
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@4dc8caa7
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@4dc8caa7
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@6c45ee6e
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@6c45ee6e
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7ca33c24
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@7ca33c24
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@1b765a2c
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@1b765a2c
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2c5529ab
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@2c5529ab
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration date -> org.hibernate.type.DateType@24d09c1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@24d09c1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration time -> org.hibernate.type.TimeType@2dd80673
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@2dd80673
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration timestamp -> org.hibernate.type.TimestampType@7216fb24
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@7216fb24
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@7216fb24
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@70a36a66
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration calendar -> org.hibernate.type.CalendarType@158a3b2e
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@158a3b2e
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@158a3b2e
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@3e821657
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration calendar_time -> org.hibernate.type.CalendarTimeType@260e86a1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration locale -> org.hibernate.type.LocaleType@5b068087
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@5b068087
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration currency -> org.hibernate.type.CurrencyType@56303b57
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@56303b57
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@23bff419
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@23bff419
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration class -> org.hibernate.type.ClassType@65fe9e33
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@65fe9e33
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@180da663
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@180da663
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@37052337
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration binary -> org.hibernate.type.BinaryType@37efd131
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration byte[] -> org.hibernate.type.BinaryType@37efd131
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration [B -> org.hibernate.type.BinaryType@37efd131
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@56e8b606
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@56e8b606
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@56e8b606
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration row_version -> org.hibernate.type.RowVersionType@1253e7cb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration image -> org.hibernate.type.ImageType@366c4480
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration characters -> org.hibernate.type.CharArrayType@5cbe877d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration char[] -> org.hibernate.type.CharArrayType@5cbe877d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration [C -> org.hibernate.type.CharArrayType@5cbe877d
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@1b2c4efb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@1b2c4efb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@1b2c4efb
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration text -> org.hibernate.type.TextType@4566d049
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration ntext -> org.hibernate.type.NTextType@6f2cfcc2
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration blob -> org.hibernate.type.BlobType@2101b44a
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@2101b44a
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@3d9f6567
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration clob -> org.hibernate.type.ClobType@4233e892
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@4233e892
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration nclob -> org.hibernate.type.NClobType@2f4205be
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@2f4205be
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@6b98a075
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@e84a8e1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration serializable -> org.hibernate.type.SerializableType@23d1e5d0
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration object -> org.hibernate.type.ObjectType@68044f4
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@68044f4
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@6c5945a7
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@2f05be7f
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@640f11a1
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@5c10f1c3
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7ac2e39b
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@78365cfa
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@3a0d172f
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@68ad99fe
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [seqhilo] -> [org.hibernate.id.SequenceHiLoGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [sequence-identity] -> [org.hibernate.id.SequenceIdentityGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+2023-06-04 20:35:00 DEBUG DefaultIdentifierGeneratorFactory:98 - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+2023-06-04 20:35:00 WARN  pooling:75 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2023-06-04 20:35:00 INFO  pooling:119 - HHH10001005: using driver [org.postgresql.Driver] at URL [jdbc:postgresql://localhost:5432/jDB]
+2023-06-04 20:35:00 INFO  pooling:125 - HHH10001001: Connection properties: {password=postgres, user=postgres}
+2023-06-04 20:35:00 INFO  pooling:132 - HHH10001003: Autocommit mode: false
+2023-06-04 20:35:00 DEBUG DriverManagerConnectionProviderImpl:384 - Initializing Connection pool with 1 Connections
+2023-06-04 20:35:00 INFO  DriverManagerConnectionProviderImpl:322 - HHH000115: Hibernate connection pool size: 1 (min=1)
+2023-06-04 20:35:00 DEBUG JdbcEnvironmentInitiator:72 - Database ->
+       name : PostgreSQL
+    version : 15.1
+      major : 15
+      minor : 1
+2023-06-04 20:35:00 DEBUG JdbcEnvironmentInitiator:83 - Driver ->
+       name : PostgreSQL JDBC Driver
+    version : 42.5.1
+      major : 42
+      minor : 5
+2023-06-04 20:35:00 DEBUG JdbcEnvironmentInitiator:389 - JDBC version : 4.2
+2023-06-04 20:35:00 INFO  Dialect:175 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL9Dialect
+2023-06-04 20:35:00 DEBUG IdentifierHelperBuilder:114 - JDBC driver metadata reported database stores quoted identifiers in neither upper, lower nor mixed case
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration pg-uuid -> org.hibernate.type.PostgresUUIDType@58dea0a5
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:157 - Adding type registration java.util.UUID -> org.hibernate.type.PostgresUUIDType@58dea0a5
+2023-06-04 20:35:00 DEBUG BasicTypeRegistry:160 - HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@180da663
+2023-06-04 20:35:00 DEBUG TypeConfiguration$Scope:149 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4d157787] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@68ed96ca]
+2023-06-04 20:35:00 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+2023-06-04 20:35:00 DEBUG AnnotationBinder:547 - Binding entity from annotated class: hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-06-04 20:35:00 DEBUG EntityBinder:431 - Import with entity name User
+2023-06-04 20:35:00 DEBUG Namespace:51 - Created database namespace [logicalName=Name{catalog=null, schema=portal}, physicalName=Name{catalog=null, schema=portal}]
+2023-06-04 20:35:00 DEBUG EntityBinder:874 - Bind entity hilelll.hibernate.relationships.model.User on table users
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.User] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:id]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for id
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property id
+2023-06-04 20:35:00 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=age, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property age with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:age]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for age
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property age
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='driver_id', referencedColumn='', mappedBy=''}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=driver, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property driver
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=email, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property email with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:email]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for email
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property email
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=name, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property name with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:name]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for name
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property name
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=password, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property password with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:password]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for password
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property password
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=roles_KEY, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='roles_KEY', referencedColumn='null', mappedBy='null'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='user_id', referencedColumn='', mappedBy=''}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='role_id', referencedColumn='', mappedBy=''}
+2023-06-04 20:35:00 DEBUG CollectionBinder:451 - Collection role: hilelll.hibernate.relationships.model.User.roles
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property roles
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=sex, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property sex with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:sex]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for sex
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property sex
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.users), mappingColumn=surname, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property surname with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.User:surname]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for surname
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property surname
+2023-06-04 20:35:00 DEBUG AnnotationBinder:547 - Binding entity from annotated class: hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-06-04 20:35:00 DEBUG EntityBinder:431 - Import with entity name Role
+2023-06-04 20:35:00 DEBUG EntityBinder:874 - Bind entity hilelll.hibernate.relationships.model.Role on table roles
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.roles), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Role] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Role:id]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for id
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property id
+2023-06-04 20:35:00 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.roles), mappingColumn=role, insertable=true, updatable=true, unique=true}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property role with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Role:role]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for role
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property role
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.roles), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.roles), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.roles), mappingColumn=users_KEY, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='users_KEY', referencedColumn='null', mappedBy='null'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='roles'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='roles'}
+2023-06-04 20:35:00 DEBUG CollectionBinder:451 - Collection role: hilelll.hibernate.relationships.model.Role.users
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property users
+2023-06-04 20:35:00 DEBUG AnnotationBinder:547 - Binding entity from annotated class: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-06-04 20:35:00 DEBUG EntityBinder:431 - Import with entity name Driver
+2023-06-04 20:35:00 DEBUG EntityBinder:874 - Bind entity hilelll.hibernate.relationships.model.Driver on table drivers
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Driver] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Driver:id]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for id
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property id
+2023-06-04 20:35:00 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=cars, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=null, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=element, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=cars_KEY, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='cars_KEY', referencedColumn='null', mappedBy='null'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2023-06-04 20:35:00 DEBUG CollectionBinder:451 - Collection role: hilelll.hibernate.relationships.model.Driver.cars
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property cars
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=license, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property license with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Driver:license]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for license
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property license
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=nick, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property nick with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Driver:nick]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for nick
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property nick
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='null', referencedColumn='null', mappedBy='driver'}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.drivers), mappingColumn=user, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG AnnotationBinder:547 - Binding entity from annotated class: hilelll.hibernate.relationships.model.Car
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3DiscriminatorColumn{logicalColumnName'DTYPE', discriminatorTypeName='string'}
+2023-06-04 20:35:00 DEBUG EntityBinder:431 - Import with entity name Car
+2023-06-04 20:35:00 DEBUG EntityBinder:874 - Bind entity hilelll.hibernate.relationships.model.Car on table cars
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.cars), mappingColumn=id, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Car] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Car
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property id with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Car:id]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for id
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property id
+2023-06-04 20:35:00 DEBUG BinderHelper:514 - #makeIdGenerator(org.hibernate.mapping.SimpleValue([org.hibernate.mapping.Column(id)]), id, identity, , ...)
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.cars), mappingColumn=carClass, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property carClass with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Car:carClass]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for carClass
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property carClass
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3JoinColumn{logicalColumnName='driver_id', referencedColumn='', mappedBy=''}
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.cars), mappingColumn=driver, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property driver
+2023-06-04 20:35:00 DEBUG Ejb3Column:227 - Binding column: Ejb3Column{table=org.hibernate.mapping.Table(portal.cars), mappingColumn=model, insertable=true, updatable=true, unique=false}
+2023-06-04 20:35:00 DEBUG PropertyBinder:175 - MetadataSourceProcessor property model with lazy=false
+2023-06-04 20:35:00 DEBUG AbstractPropertyHolder:94 - Attempting to locate auto-apply AttributeConverter for property [hilelll.hibernate.relationships.model.Car:model]
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:410 - building SimpleValue for model
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property model
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for id
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for age
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for email
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for name
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for password
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for sex
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for surname
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for id
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for role
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for id
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for license
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for nick
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for id
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for carClass
+2023-06-04 20:35:00 DEBUG SimpleValueBinder:455 - Starting fillSimpleValue for model
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [id] to be non-null as it is part of the primary key for table [users]
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [id] to be non-null as it is part of the primary key for table [roles]
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [id] to be non-null as it is part of the primary key for table [drivers]
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [id] to be non-null as it is part of the primary key for table [cars]
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:51 - Second pass for collection: hilelll.hibernate.relationships.model.User.roles
+2023-06-04 20:35:00 DEBUG CollectionBinder:1365 - Binding as ManyToMany: hilelll.hibernate.relationships.model.User.roles
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [user_id] to be non-null as it is part of the primary key for table [user_role]
+2023-06-04 20:35:00 DEBUG PrimaryKey:36 - Forcing column [role_id] to be non-null as it is part of the primary key for table [user_role]
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:68 - Mapped collection key: user_id, element: role_id
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:51 - Second pass for collection: hilelll.hibernate.relationships.model.Role.users
+2023-06-04 20:35:00 DEBUG CollectionBinder:1365 - Binding as ManyToMany: hilelll.hibernate.relationships.model.Role.users
+2023-06-04 20:35:00 DEBUG TableBinder:554 - Retrieving property hilelll.hibernate.relationships.model.User.roles
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:68 - Mapped collection key: role_id, element: user_id
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:51 - Second pass for collection: hilelll.hibernate.relationships.model.Driver.cars
+2023-06-04 20:35:00 DEBUG CollectionBinder:930 - Binding a OneToMany: hilelll.hibernate.relationships.model.Driver.cars through a foreign key
+2023-06-04 20:35:00 DEBUG CollectionBinder:968 - Mapping collection: hilelll.hibernate.relationships.model.Driver.cars -> cars
+2023-06-04 20:35:00 DEBUG TableBinder:554 - Retrieving property hilelll.hibernate.relationships.model.Car.driver
+2023-06-04 20:35:00 DEBUG CollectionSecondPass:68 - Mapped collection key: driver_id, one-to-many: hilelll.hibernate.relationships.model.Car
+2023-06-04 20:35:00 DEBUG PropertyBinder:266 - Building property user
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1891 - Processing association property references
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1891 - Processing association property references
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG InFlightMetadataCollectorImpl:1796 - Resolving reference to class: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG SessionFactoryImpl:208 - Building session factory
+2023-06-04 20:35:00 DEBUG Settings:68 - SessionFactory name : null
+2023-06-04 20:35:00 DEBUG Settings:69 - Automatic flush during beforeCompletion(): enabled
+2023-06-04 20:35:00 DEBUG Settings:70 - Automatic session close at end of transaction: disabled
+2023-06-04 20:35:00 DEBUG Settings:72 - Statistics: disabled
+2023-06-04 20:35:00 DEBUG Settings:74 - Deleted entity synthetic identifier rollback: disabled
+2023-06-04 20:35:00 DEBUG Settings:75 - Default entity-mode: pojo
+2023-06-04 20:35:00 DEBUG Settings:76 - Check Nullability in Core (should be disabled when Bean Validation is on): enabled
+2023-06-04 20:35:00 DEBUG Settings:77 - Allow initialization of lazy state outside session : disabled
+2023-06-04 20:35:00 DEBUG Settings:79 - Using BatchFetchStyle : LEGACY
+2023-06-04 20:35:00 DEBUG Settings:80 - Default batch fetch size: -1
+2023-06-04 20:35:00 DEBUG Settings:81 - Maximum outer join fetch depth: null
+2023-06-04 20:35:00 DEBUG Settings:82 - Default null ordering: NONE
+2023-06-04 20:35:00 DEBUG Settings:83 - Order SQL updates by primary key: disabled
+2023-06-04 20:35:00 DEBUG Settings:84 - Order SQL inserts for batching: disabled
+2023-06-04 20:35:00 DEBUG Settings:86 - multi-tenancy strategy : NONE
+2023-06-04 20:35:00 DEBUG Settings:88 - JTA Track by Thread: enabled
+2023-06-04 20:35:00 DEBUG Settings:90 - Query language substitutions: {}
+2023-06-04 20:35:00 DEBUG Settings:91 - Named query checking : enabled
+2023-06-04 20:35:00 DEBUG Settings:93 - Second-level cache: disabled
+2023-06-04 20:35:00 DEBUG Settings:94 - Second-level query cache: disabled
+2023-06-04 20:35:00 DEBUG Settings:95 - Second-level query cache factory: null
+2023-06-04 20:35:00 DEBUG Settings:96 - Second-level cache region prefix: null
+2023-06-04 20:35:00 DEBUG Settings:97 - Optimize second-level cache for minimal puts: disabled
+2023-06-04 20:35:00 DEBUG Settings:98 - Structured second-level cache entries: disabled
+2023-06-04 20:35:00 DEBUG Settings:99 - Second-level cache direct-reference entries: disabled
+2023-06-04 20:35:00 DEBUG Settings:100 - Automatic eviction of collection cache: disabled
+2023-06-04 20:35:00 DEBUG Settings:102 - JDBC batch size: 15
+2023-06-04 20:35:00 DEBUG Settings:103 - JDBC batch updates for versioned data: enabled
+2023-06-04 20:35:00 DEBUG Settings:104 - Scrollable result sets: enabled
+2023-06-04 20:35:00 DEBUG Settings:105 - Wrap result sets: disabled
+2023-06-04 20:35:00 DEBUG Settings:106 - JDBC3 getGeneratedKeys(): enabled
+2023-06-04 20:35:00 DEBUG Settings:107 - JDBC result set fetch size: null
+2023-06-04 20:35:00 DEBUG Settings:108 - Connection release mode: AFTER_TRANSACTION
+2023-06-04 20:35:00 DEBUG Settings:109 - Generate SQL with comments: disabled
+2023-06-04 20:35:00 DEBUG Settings:111 - JPA compliance - query : disabled
+2023-06-04 20:35:00 DEBUG Settings:112 - JPA compliance - closed-handling : disabled
+2023-06-04 20:35:00 DEBUG Settings:113 - JPA compliance - lists : disabled
+2023-06-04 20:35:00 DEBUG Settings:114 - JPA compliance - transactions : disabled
+2023-06-04 20:35:00 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-06-04 20:35:00 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-06-04 20:35:00 DEBUG SessionFactoryImpl:276 - Session factory constructed with filter configurations : {}
+2023-06-04 20:35:00 DEBUG SessionFactoryImpl:277 - Instantiating session factory with properties: {dialect=org.hibernate.dialect.PostgreSQL9Dialect, java.specification.version=18, sun.cpu.isalist=amd64, sun.jnu.encoding=Cp1251, hibernate.dialect=org.hibernate.dialect.PostgreSQL9Dialect, java.class.path=C:\Users\Jemm\IdeaProjects\refreshKnowlages\target\classes;C:\Users\Jemm\.m2\repository\org\postgresql\postgresql\42.5.1\postgresql-42.5.1.jar;C:\Users\Jemm\.m2\repository\org\checkerframework\checker-qual\3.5.0\checker-qual-3.5.0.jar;C:\Users\Jemm\.m2\repository\org\hibernate\hibernate-core\5.6.10.Final\hibernate-core-5.6.10.Final.jar;C:\Users\Jemm\.m2\repository\org\jboss\logging\jboss-logging\3.4.3.Final\jboss-logging-3.4.3.Final.jar;C:\Users\Jemm\.m2\repository\javax\persistence\javax.persistence-api\2.2\javax.persistence-api-2.2.jar;C:\Users\Jemm\.m2\repository\net\bytebuddy\byte-buddy\1.12.9\byte-buddy-1.12.9.jar;C:\Users\Jemm\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Jemm\.m2\repository\org\jboss\spec\javax\transaction\jboss-transaction-api_1.2_spec\1.1.1.Final\jboss-transaction-api_1.2_spec-1.1.1.Final.jar;C:\Users\Jemm\.m2\repository\org\jboss\jandex\2.4.2.Final\jandex-2.4.2.Final.jar;C:\Users\Jemm\.m2\repository\com\fasterxml\classmate\1.5.1\classmate-1.5.1.jar;C:\Users\Jemm\.m2\repository\javax\activation\javax.activation-api\1.2.0\javax.activation-api-1.2.0.jar;C:\Users\Jemm\.m2\repository\org\hibernate\common\hibernate-commons-annotations\5.1.2.Final\hibernate-commons-annotations-5.1.2.Final.jar;C:\Users\Jemm\.m2\repository\javax\xml\bind\jaxb-api\2.3.1\jaxb-api-2.3.1.jar;C:\Users\Jemm\.m2\repository\org\glassfish\jaxb\jaxb-runtime\2.3.1\jaxb-runtime-2.3.1.jar;C:\Users\Jemm\.m2\repository\org\glassfish\jaxb\txw2\2.3.1\txw2-2.3.1.jar;C:\Users\Jemm\.m2\repository\com\sun\istack\istack-commons-runtime\3.0.7\istack-commons-runtime-3.0.7.jar;C:\Users\Jemm\.m2\repository\org\jvnet\staxex\stax-ex\1.8\stax-ex-1.8.jar;C:\Users\Jemm\.m2\repository\com\sun\xml\fastinfoset\FastInfoset\1.2.15\FastInfoset-1.2.15.jar;C:\Users\Jemm\.m2\repository\log4j\log4j\1.2.17\log4j-1.2.17.jar, java.vm.vendor=Oracle Corporation, sun.arch.data.model=64, user.variant=, java.vendor.url=https://java.oracle.com/, user.timezone=Europe/Kiev, java.vm.specification.version=18, os.name=Windows 10, sun.java.launcher=SUN_STANDARD, user.country=UA, sun.boot.library.path=C:\Users\Jemm\.jdks\openjdk-18.0.2\bin, sun.java.command=hilelll.hibernate.relationships.Main, jdk.debug=release, sun.cpu.endian=little, user.home=C:\Users\Jemm, user.language=uk, sun.stderr.encoding=UTF-8, java.specification.vendor=Oracle Corporation, java.version.date=2022-07-19, java.home=C:\Users\Jemm\.jdks\openjdk-18.0.2, file.separator=\, java.vm.compressedOopsMode=Zero based, sun.stdout.encoding=UTF-8, line.separator=
+, java.vm.specification.vendor=Oracle Corporation, java.specification.name=Java Platform API Specification, hibernate.hbm2ddl.auto=update, user.script=, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, java.runtime.version=18.0.2+9-61, user.name=Jemm, path.separator=;, hibernate.connection.username=****, os.version=10.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:postgresql://localhost:5432/jDB, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, hibernate.show_sql=true, show_sql=true, hibernate.connection.driver_class=org.postgresql.Driver, java.vendor.url.bug=https://bugreport.java.com/bugreport/, java.io.tmpdir=C:\Users\Jemm\AppData\Local\Temp\, java.version=18.0.2, user.dir=C:\Users\Jemm\IdeaProjects\refreshKnowlages, os.arch=amd64, java.vm.specification.name=Java Virtual Machine Specification, hibernate.connection.password=****, sun.os.patch.level=, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@4ed38226, native.encoding=Cp1251, java.library.path=C:\Users\Jemm\.jdks\openjdk-18.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Eclipse Adoptium\jdk-11.0.19.7-hotspot\bin;c:\python27\;c:\python27\scripts;c:\program files (x86)\common files\intel\shared files\cpp\bin\intel64;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\program files (x86)\common files\acronis\virtualfile\;c:\program files (x86)\common files\acronis\virtualfile64\;c:\program files (x86)\common files\acronis\snapapi\;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files (x86)\intel\intel(r) management engine components\dal;c:\program files\intel\intel(r) management engine components\dal;c:\windows\system32;c:\windows;c:\windows\system32\wbem;c:\windows\system32\windowspowershell\v1.0\;c:\windows\system32\openssh\;c:\program files\nvidia corporation\nvidia nvdlisr;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\Jemm\AppData\Local\Microsoft\WindowsApps;C:\Users\Jemm\AppData\Local\Programs\Microsoft VS Code\bin;., java.vendor=Oracle Corporation, java.vm.info=mixed mode, sharing, java.vm.version=18.0.2+9-61, hibernate.bytecode.use_reflection_optimizer=false, sun.io.unicode.encoding=UnicodeLittle, hibernate.connection.pool_size=1, java.class.version=62.0}
+2023-06-04 20:35:00 DEBUG JaccIntegrator:84 - Skipping JACC integration as it was not enabled
+2023-06-04 20:35:00 DEBUG EnumType:126 - Using NAMED-based conversion for Enum hilelll.hibernate.relationships.model.enums.RoleEnum
+2023-06-04 20:35:00 DEBUG EnumType:126 - Using NAMED-based conversion for Enum hilelll.hibernate.relationships.model.enums.SexEnum
+2023-06-04 20:35:00 DEBUG EnumType:126 - Using NAMED-based conversion for Enum hilelll.hibernate.relationships.model.enums.CarClassEnum
+2023-06-04 20:35:00 DEBUG EnumType:126 - Using NAMED-based conversion for Enum hilelll.hibernate.relationships.model.enums.ModelEnum
+2023-06-04 20:35:00 DEBUG EnumType:126 - Using NAMED-based conversion for Enum hilelll.hibernate.relationships.model.enums.LicenseEnum
+2023-06-04 20:35:00 DEBUG SessionFactoryImpl:316 - Instantiated session factory
+2023-06-04 20:35:00 DEBUG TypeConfiguration$Scope:154 - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@4d157787] to SessionFactoryImpl [org.hibernate.internal.SessionFactoryImpl@6ae7deac]
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Role] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.User#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.User#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.User] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.User#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.User#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Car#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Car#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Car] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Car
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Car#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Car#driver` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Driver#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Driver#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:60 - Not known whether passed class name [hilelll.hibernate.relationships.model.Driver] is safe
+2023-06-04 20:35:00 DEBUG ClassLoaderAccessImpl:62 - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Driver#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG interceptor:46 - To-one property `hilelll.hibernate.relationships.model.Driver#user` was mapped with LAZY + NO_PROXY but the class was not enhanced
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:687 - Static SQL for collection: hilelll.hibernate.relationships.model.User.roles
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:689 -  Row insert: insert into portal.user_role (user_id, role_id) values (?, ?)
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:692 -  Row update: update portal.user_role set role_id=? where user_id=? and role_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:695 -  Row delete: delete from portal.user_role where user_id=? and role_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:698 -  One-shot delete: delete from portal.user_role where user_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:687 - Static SQL for collection: hilelll.hibernate.relationships.model.Driver.cars
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:689 -  Row insert: update portal.cars set driver_id=? where id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:692 -  Row update: update portal.cars set  where id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:695 -  Row delete: update portal.cars set driver_id=null where driver_id=? and id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:698 -  One-shot delete: update portal.cars set driver_id=null where driver_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:687 - Static SQL for collection: hilelll.hibernate.relationships.model.Role.users
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:689 -  Row insert: insert into portal.user_role (role_id, user_id) values (?, ?)
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:692 -  Row update: update portal.user_role set user_id=? where role_id=? and user_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:695 -  Row delete: delete from portal.user_role where role_id=? and user_id=?
+2023-06-04 20:35:00 DEBUG AbstractCollectionPersister:698 -  One-shot delete: delete from portal.user_role where role_id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: hilelll.hibernate.relationships.model.Role
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4007 -  Version select: select id from portal.roles where id =?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select role_.id, role_.role as role2_2_ from portal.roles role_ where role_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into portal.roles (role, id) values (?, ?)
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Update 0: update portal.roles set role=? where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from portal.roles where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into portal.roles (role) values (?)
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f911326]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : role
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : users
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@267dc982]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@10f7918f]
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=hilelll.hibernate.relationships.model.Role)
+    - Returns
+       - EntityReturnImpl(entity=hilelll.hibernate.relationships.model.Role, querySpaceUid=<gen:0>, path=hilelll.hibernate.relationships.model.Role)
+          - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.Role.users, querySpaceUid=<gen:1>, path=hilelll.hibernate.relationships.model.Role.users)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.User, querySpaceUid=<gen:2>, path=hilelll.hibernate.relationships.model.Role.users.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hilelll.hibernate.relationships.model.Role)
+          - SQL table alias mapping - role0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_2_0_}
+
+2023-06-04 20:35:00 DEBUG EntityLoader:129 - Static select for entity hilelll.hibernate.relationships.model.Role [NONE]: select role0_.id as id1_2_0_, role0_.role as role2_2_0_ from portal.roles role0_ where role0_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: hilelll.hibernate.relationships.model.User
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4007 -  Version select: select id from portal.users where id =?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select user_.id, user_.age as age2_4_, user_.driver_id as driver_i8_4_, user_.email as email3_4_, user_.name as name4_4_, user_.password as password5_4_, user_.sex as sex6_4_, user_.surname as surname7_4_ from portal.users user_ where user_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into portal.users (age, driver_id, email, name, password, sex, surname, id) values (?, ?, ?, ?, ?, ?, ?, ?)
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Update 0: update portal.users set age=?, driver_id=?, email=?, name=?, password=?, sex=?, surname=? where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from portal.users where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into portal.users (age, driver_id, email, name, password, sex, surname) values (?, ?, ?, ?, ?, ?, ?)
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@31dfc6f5]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : age
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@663bb8ef]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.cars
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6d5c2745]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@44b29496]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.license
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.nick
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : driver.user
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : email
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : name
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : password
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : roles
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@7c847072]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@43d9f1a2]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : sex
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : surname
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=hilelll.hibernate.relationships.model.User)
+    - Returns
+       - EntityReturnImpl(entity=hilelll.hibernate.relationships.model.User, querySpaceUid=<gen:0>, path=hilelll.hibernate.relationships.model.User)
+          - EntityAttributeFetchImpl(entity=hilelll.hibernate.relationships.model.Driver, querySpaceUid=<gen:1>, path=hilelll.hibernate.relationships.model.User.driver)
+             - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.Driver.cars, querySpaceUid=<gen:2>, path=hilelll.hibernate.relationships.model.User.driver.cars)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Car, querySpaceUid=<gen:3>, path=hilelll.hibernate.relationships.model.User.driver.cars.<elements>)
+          - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.User.roles, querySpaceUid=<gen:4>, path=hilelll.hibernate.relationships.model.User.roles)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Role, querySpaceUid=<gen:5>, path=hilelll.hibernate.relationships.model.User.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hilelll.hibernate.relationships.model.User)
+          - SQL table alias mapping - user0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_4_0_}
+          - JOIN (JoinDefinedByMetadata(driver)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hilelll.hibernate.relationships.model.Driver)
+                - SQL table alias mapping - driver1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+
+2023-06-04 20:35:00 DEBUG EntityLoader:129 - Static select for entity hilelll.hibernate.relationships.model.User [NONE]: select user0_.id as id1_4_0_, user0_.age as age2_4_0_, user0_.driver_id as driver_i8_4_0_, user0_.email as email3_4_0_, user0_.name as name4_4_0_, user0_.password as password5_4_0_, user0_.sex as sex6_4_0_, user0_.surname as surname7_4_0_, driver1_.id as id1_1_1_, driver1_.license as license2_1_1_, driver1_.nick as nick3_1_1_ from portal.users user0_ left outer join portal.drivers driver1_ on user0_.driver_id=driver1_.id where user0_.id=?
+2023-06-04 20:35:00 DEBUG Loader:106 - Static select for entity hilelll.hibernate.relationships.model.User [NONE]: select user0_.id as id1_4_1_, user0_.age as age2_4_1_, user0_.driver_id as driver_i8_4_1_, user0_.email as email3_4_1_, user0_.name as name4_4_1_, user0_.password as password5_4_1_, user0_.sex as sex6_4_1_, user0_.surname as surname7_4_1_, driver1_.id as id1_1_0_, driver1_.license as license2_1_0_, driver1_.nick as nick3_1_0_ from portal.users user0_ left outer join portal.drivers driver1_ on user0_.driver_id=driver1_.id where user0_.driver_id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: hilelll.hibernate.relationships.model.Car
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4007 -  Version select: select id from portal.cars where id =?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select car_.id, car_.carClass as carclass2_0_, car_.driver_id as driver_i4_0_, car_.model as model3_0_ from portal.cars car_ where car_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into portal.cars (carClass, driver_id, model, id) values (?, ?, ?, ?)
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Update 0: update portal.cars set carClass=?, driver_id=?, model=? where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from portal.cars where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into portal.cars (carClass, driver_id, model) values (?, ?, ?)
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4b0f2299]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : carClass
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@15405bd6]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.cars
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : driver.cars
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.license
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.nick
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@70730db]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.age
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : driver.user.driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.email
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.name
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.password
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.roles
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@12704e15]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@512575e9]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.sex
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user.surname
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : model
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=hilelll.hibernate.relationships.model.Car)
+    - Returns
+       - EntityReturnImpl(entity=hilelll.hibernate.relationships.model.Car, querySpaceUid=<gen:0>, path=hilelll.hibernate.relationships.model.Car)
+          - EntityAttributeFetchImpl(entity=hilelll.hibernate.relationships.model.Driver, querySpaceUid=<gen:1>, path=hilelll.hibernate.relationships.model.Car.driver)
+             - EntityAttributeFetchImpl(entity=hilelll.hibernate.relationships.model.User, querySpaceUid=<gen:2>, path=hilelll.hibernate.relationships.model.Car.driver.user)
+                - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.User.roles, querySpaceUid=<gen:3>, path=hilelll.hibernate.relationships.model.Car.driver.user.roles)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Role, querySpaceUid=<gen:4>, path=hilelll.hibernate.relationships.model.Car.driver.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hilelll.hibernate.relationships.model.Car)
+          - SQL table alias mapping - car0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_0_0_}
+          - JOIN (JoinDefinedByMetadata(driver)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hilelll.hibernate.relationships.model.Driver)
+                - SQL table alias mapping - driver1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_1_1_}
+                - JOIN (JoinDefinedByMetadata(user)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hilelll.hibernate.relationships.model.User)
+                      - SQL table alias mapping - user2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_4_2_}
+
+2023-06-04 20:35:00 DEBUG EntityLoader:129 - Static select for entity hilelll.hibernate.relationships.model.Car [NONE]: select car0_.id as id1_0_0_, car0_.carClass as carclass2_0_0_, car0_.driver_id as driver_i4_0_0_, car0_.model as model3_0_0_, driver1_.id as id1_1_1_, driver1_.license as license2_1_1_, driver1_.nick as nick3_1_1_, user2_.id as id1_4_2_, user2_.age as age2_4_2_, user2_.driver_id as driver_i8_4_2_, user2_.email as email3_4_2_, user2_.name as name4_4_2_, user2_.password as password5_4_2_, user2_.sex as sex6_4_2_, user2_.surname as surname7_4_2_ from portal.cars car0_ left outer join portal.drivers driver1_ on car0_.driver_id=driver1_.id left outer join portal.users user2_ on driver1_.id=user2_.driver_id where car0_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4002 - Static SQL for entity: hilelll.hibernate.relationships.model.Driver
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4007 -  Version select: select id from portal.drivers where id =?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4010 -  Snapshot select: select driver_.id, driver_.license as license2_1_, driver_.nick as nick3_1_ from portal.drivers driver_ where driver_.id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Insert 0: insert into portal.drivers (license, nick, id) values (?, ?, ?)
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Update 0: update portal.drivers set license=?, nick=? where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:394 -  Delete 0: delete from portal.drivers where id=?
+2023-06-04 20:35:00 DEBUG AbstractEntityPersister:4018 -  Identity insert: insert into portal.drivers (license, nick) values (?, ?)
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6f1a16fe]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : cars
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@33634f04]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@4993febc]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : license
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : nick
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@7601bc96]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.age
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : user.driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.email
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.name
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.password
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.roles
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@6192a5d5]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:5> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@3722c145]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.sex
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : user.surname
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(entity=hilelll.hibernate.relationships.model.Driver)
+    - Returns
+       - EntityReturnImpl(entity=hilelll.hibernate.relationships.model.Driver, querySpaceUid=<gen:0>, path=hilelll.hibernate.relationships.model.Driver)
+          - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.Driver.cars, querySpaceUid=<gen:1>, path=hilelll.hibernate.relationships.model.Driver.cars)
+             - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Car, querySpaceUid=<gen:2>, path=hilelll.hibernate.relationships.model.Driver.cars.<elements>)
+          - EntityAttributeFetchImpl(entity=hilelll.hibernate.relationships.model.User, querySpaceUid=<gen:3>, path=hilelll.hibernate.relationships.model.Driver.user)
+             - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.User.roles, querySpaceUid=<gen:4>, path=hilelll.hibernate.relationships.model.Driver.user.roles)
+                - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Role, querySpaceUid=<gen:5>, path=hilelll.hibernate.relationships.model.Driver.user.roles.<elements>)
+    - QuerySpaces
+       - EntityQuerySpaceImpl(uid=<gen:0>, entity=hilelll.hibernate.relationships.model.Driver)
+          - SQL table alias mapping - driver0_
+          - alias suffix - 0_
+          - suffixed key columns - {id1_1_0_}
+          - JOIN (JoinDefinedByMetadata(user)) : <gen:0> -> <gen:3>
+             - EntityQuerySpaceImpl(uid=<gen:3>, entity=hilelll.hibernate.relationships.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+
+2023-06-04 20:35:00 DEBUG EntityLoader:129 - Static select for entity hilelll.hibernate.relationships.model.Driver [NONE]: select driver0_.id as id1_1_0_, driver0_.license as license2_1_0_, driver0_.nick as nick3_1_0_, user1_.id as id1_4_1_, user1_.age as age2_4_1_, user1_.driver_id as driver_i8_4_1_, user1_.email as email3_4_1_, user1_.name as name4_4_1_, user1_.password as password5_4_1_, user1_.sex as sex6_4_1_, user1_.surname as surname7_4_1_ from portal.drivers driver0_ left outer join portal.users user1_ on driver0_.id=user1_.driver_id where driver0_.id=?
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@12e5da86]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@6535117e]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : role
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : users
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : users
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=hilelll.hibernate.relationships.model.User.roles)
+    - Returns
+       - CollectionReturnImpl(collection=hilelll.hibernate.relationships.model.User.roles, querySpaceUid=<gen:0>, path=[hilelll.hibernate.relationships.model.User.roles])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Role, querySpaceUid=<gen:1>, path=[hilelll.hibernate.relationships.model.User.roles].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hilelll.hibernate.relationships.model.User.roles)
+          - SQL table alias mapping - roles0_
+          - alias suffix - 0_
+          - suffixed key columns - {user_id1_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_2_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hilelll.hibernate.relationships.model.Role)
+                - SQL table alias mapping - role1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_2_1_}
+
+2023-06-04 20:35:00 DEBUG CollectionLoader:83 - Static select for collection hilelll.hibernate.relationships.model.User.roles: select roles0_.user_id as user_id1_3_0_, roles0_.role_id as role_id2_3_0_, role1_.id as id1_2_1_, role1_.role as role2_2_1_ from portal.user_role roles0_ inner join portal.roles role1_ on roles0_.role_id=role1_.id where roles0_.user_id=?
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@3e67f5f2]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@fd53053]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : carClass
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : driver
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : model
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=hilelll.hibernate.relationships.model.Driver.cars)
+    - Returns
+       - CollectionReturnImpl(collection=hilelll.hibernate.relationships.model.Driver.cars, querySpaceUid=<gen:0>, path=[hilelll.hibernate.relationships.model.Driver.cars])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Car, querySpaceUid=<gen:1>, path=[hilelll.hibernate.relationships.model.Driver.cars].<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hilelll.hibernate.relationships.model.Driver.cars)
+          - SQL table alias mapping - cars0_
+          - alias suffix - 0_
+          - suffixed key columns - {driver_i4_0_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_0_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hilelll.hibernate.relationships.model.Car)
+                - SQL table alias mapping - cars0_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_0_1_}
+
+2023-06-04 20:35:00 DEBUG CollectionLoader:83 - Static select for collection hilelll.hibernate.relationships.model.Driver.cars: select cars0_.driver_id as driver_i4_0_0_, cars0_.id as id1_0_0_, cars0_.id as id1_0_1_, cars0_.carClass as carclass2_0_1_, cars0_.driver_id as driver_i4_0_1_, cars0_.model as model3_0_1_ from portal.cars cars0_ where cars0_.driver_id=?
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:0> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@527fc8e]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:1> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@61bfc9bf]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : age
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:2> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@862f408]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.cars
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:3> -> org.hibernate.loader.plan.build.internal.spaces.CollectionQuerySpaceImpl@33ecbd6c]
+2023-06-04 20:35:00 DEBUG QuerySpacesImpl:174 - Adding QuerySpace : uid = <gen:4> -> org.hibernate.loader.plan.build.internal.spaces.EntityQuerySpaceImpl@5c723f2d]
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.license
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.nick
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : driver.user
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : driver.user
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : email
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : name
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : password
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : roles
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:154 - Property path deemed to be circular : roles
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : sex
+2023-06-04 20:35:00 DEBUG MetamodelGraphWalker:146 - Visiting attribute path : surname
+2023-06-04 20:35:00 DEBUG FetchStyleLoadPlanBuildingAssociationVisitationStrategy:160 - Building LoadPlan...
+2023-06-04 20:35:00 DEBUG LoadQueryJoinAndFetchProcessor:102 - processing queryspace <gen:0>
+2023-06-04 20:35:00 DEBUG LoadPlanTreePrinter:55 - LoadPlan(collection=hilelll.hibernate.relationships.model.Role.users)
+    - Returns
+       - CollectionReturnImpl(collection=hilelll.hibernate.relationships.model.Role.users, querySpaceUid=<gen:0>, path=[hilelll.hibernate.relationships.model.Role.users])
+          - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.User, querySpaceUid=<gen:1>, path=[hilelll.hibernate.relationships.model.Role.users].<elements>)
+             - EntityAttributeFetchImpl(entity=hilelll.hibernate.relationships.model.Driver, querySpaceUid=<gen:2>, path=[hilelll.hibernate.relationships.model.Role.users].<elements>.driver)
+                - CollectionAttributeFetchImpl(collection=hilelll.hibernate.relationships.model.Driver.cars, querySpaceUid=<gen:3>, path=[hilelll.hibernate.relationships.model.Role.users].<elements>.driver.cars)
+                   - (collection element) CollectionFetchableElementEntityGraph(entity=hilelll.hibernate.relationships.model.Car, querySpaceUid=<gen:4>, path=[hilelll.hibernate.relationships.model.Role.users].<elements>.driver.cars.<elements>)
+    - QuerySpaces
+       - CollectionQuerySpaceImpl(uid=<gen:0>, collection=hilelll.hibernate.relationships.model.Role.users)
+          - SQL table alias mapping - users0_
+          - alias suffix - 0_
+          - suffixed key columns - {role_id2_3_0_}
+          - entity-element alias suffix - 1_
+          - 1_entity-element suffixed key columns - id1_4_1_
+          - JOIN (JoinDefinedByMetadata(elements)) : <gen:0> -> <gen:1>
+             - EntityQuerySpaceImpl(uid=<gen:1>, entity=hilelll.hibernate.relationships.model.User)
+                - SQL table alias mapping - user1_
+                - alias suffix - 1_
+                - suffixed key columns - {id1_4_1_}
+                - JOIN (JoinDefinedByMetadata(driver)) : <gen:1> -> <gen:2>
+                   - EntityQuerySpaceImpl(uid=<gen:2>, entity=hilelll.hibernate.relationships.model.Driver)
+                      - SQL table alias mapping - driver2_
+                      - alias suffix - 2_
+                      - suffixed key columns - {id1_1_2_}
+
+2023-06-04 20:35:00 DEBUG CollectionLoader:83 - Static select for collection hilelll.hibernate.relationships.model.Role.users: select users0_.role_id as role_id2_3_0_, users0_.user_id as user_id1_3_0_, user1_.id as id1_4_1_, user1_.age as age2_4_1_, user1_.driver_id as driver_i8_4_1_, user1_.email as email3_4_1_, user1_.name as name4_4_1_, user1_.password as password5_4_1_, user1_.sex as sex6_4_1_, user1_.surname as surname7_4_1_, driver2_.id as id1_1_2_, driver2_.license as license2_1_2_, driver2_.nick as nick3_1_2_ from portal.user_role users0_ inner join portal.users user1_ on users0_.user_id=user1_.id left outer join portal.drivers driver2_ on user1_.driver_id=driver2_.id where users0_.role_id=?
+2023-06-04 20:35:01 INFO  access:48 - HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@1a8df0b3] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2023-06-04 20:35:01 DEBUG Table:497 - No alter strings for table : cars
+2023-06-04 20:35:01 DEBUG Table:497 - No alter strings for table : drivers
+2023-06-04 20:35:01 DEBUG Table:497 - No alter strings for table : roles
+2023-06-04 20:35:01 DEBUG Table:497 - No alter strings for table : user_role
+2023-06-04 20:35:01 DEBUG Table:497 - No alter strings for table : users
+2023-06-04 20:35:01 DEBUG JtaPlatformInitiator:43 - No JtaPlatform was specified, checking resolver
+2023-06-04 20:35:01 DEBUG JtaPlatformResolverInitiator:33 - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+2023-06-04 20:35:01 DEBUG StandardJtaPlatformResolver:137 - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-04 20:35:01 INFO  JtaPlatformInitiator:52 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-04 20:35:01 DEBUG NamedQueryRepository:171 - Checking 0 named HQL queries
+2023-06-04 20:35:01 DEBUG NamedQueryRepository:185 - Checking 0 named SQL queries
+2023-06-04 20:35:01 DEBUG SessionFactoryServiceRegistryImpl:92 - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+2023-06-04 20:35:01 DEBUG SessionFactoryRegistry:51 - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@2629d5dc
+2023-06-04 20:35:01 DEBUG SessionFactoryRegistry:73 - Registering SessionFactory: bfb938e9-d88f-46b8-b0fd-808b864a9401 (<unnamed>)
+2023-06-04 20:35:01 DEBUG SessionFactoryRegistry:80 - Not binding SessionFactory to JNDI, no JNDI name configured
+2023-06-04 20:35:01 DEBUG StatisticsInitiator:101 - Statistics initialized [enabled=false]
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG SQL:144 - select role0_.id as id1_2_0_, role0_.role as role2_2_0_ from portal.roles role0_ where role0_.id=?
+2023-06-04 20:35:01 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:171 - Resolving attributes for [hilelll.hibernate.relationships.model.Role#1]
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `role` : value = USER
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`role`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `users` : value = NOT NULL COLLECTION
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`users`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:352 - Done materializing entity [hilelll.hibernate.relationships.model.Role#1]
+2023-06-04 20:35:01 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : hilelll.hibernate.relationships.model.Role#1
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#1], was: [hilelll.hibernate.relationships.model.Role.users#1] (uninitialized)
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=USER, id=1, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG SQL:144 - select role0_.id as id1_2_0_, role0_.role as role2_2_0_ from portal.roles role0_ where role0_.id=?
+2023-06-04 20:35:01 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:171 - Resolving attributes for [hilelll.hibernate.relationships.model.Role#2]
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `role` : value = MODERATOR
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`role`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `users` : value = NOT NULL COLLECTION
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`users`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:352 - Done materializing entity [hilelll.hibernate.relationships.model.Role#2]
+2023-06-04 20:35:01 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : hilelll.hibernate.relationships.model.Role#2
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#2], was: [hilelll.hibernate.relationships.model.Role.users#2] (uninitialized)
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=MODERATOR, id=2, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG SQL:144 - select role0_.id as id1_2_0_, role0_.role as role2_2_0_ from portal.roles role0_ where role0_.id=?
+2023-06-04 20:35:01 DEBUG EntityReferenceInitializerImpl:131 - On call to EntityIdentifierReaderImpl#resolve, EntityKey was already known; should only happen on root returns with an optional identifier specified
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:171 - Resolving attributes for [hilelll.hibernate.relationships.model.Role#3]
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `role` : value = ADMIN
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`role`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:184 - Processing attribute `users` : value = NOT NULL COLLECTION
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:215 - Attribute (`users`)  - enhanced for lazy-loading? - false
+2023-06-04 20:35:01 DEBUG TwoPhaseLoad:352 - Done materializing entity [hilelll.hibernate.relationships.model.Role#3]
+2023-06-04 20:35:01 DEBUG AbstractLoadPlanBasedEntityLoader:307 - Done entity load : hilelll.hibernate.relationships.model.Role#3
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#3], was: [hilelll.hibernate.relationships.model.Role.users#3] (uninitialized)
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=ADMIN, id=3, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG ActionQueue:281 - Executing identity-insert immediately
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.users (age, driver_id, email, name, password, sex, surname) values (?, ?, ?, ?, ?, ?, ?)
+2023-06-04 20:35:01 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 25
+2023-06-04 20:35:01 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG Collections:196 - Collection found: [hilelll.hibernate.relationships.model.User.roles#25], was: [<unreferenced>] (initialized)
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#2], was: [hilelll.hibernate.relationships.model.Role.users#2] (uninitialized)
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#1], was: [hilelll.hibernate.relationships.model.Role.users#1] (uninitialized)
+2023-06-04 20:35:01 DEBUG Collections:213 - Collection found: [hilelll.hibernate.relationships.model.Role.users#3], was: [hilelll.hibernate.relationships.model.Role.users#3] (uninitialized)
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 3 updates, 0 deletions to 4 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 1 (re)creations, 0 updates, 0 removals to 4 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=ADMIN, id=3, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=USER, id=1, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Role{role=MODERATOR, id=2, users=<uninitialized>}
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.User{password=212, driver=null, surname=Racer, roles=[hilelll.hibernate.relationships.model.Role#2, hilelll.hibernate.relationships.model.Role#1, hilelll.hibernate.relationships.model.Role#3], sex=FEMALE, name=OneMore, id=25, age=9, email=s@mail.ua}
+2023-06-04 20:35:01 DEBUG SQL:144 - update portal.roles set role=? where id=?
+2023-06-04 20:35:01 DEBUG SQL:144 - update portal.roles set role=? where id=?
+2023-06-04 20:35:01 DEBUG SQL:144 - update portal.roles set role=? where id=?
+2023-06-04 20:35:01 DEBUG AbstractCollectionPersister:1294 - Inserting collection: [hilelll.hibernate.relationships.model.User.roles#25]
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.user_role (user_id, role_id) values (?, ?)
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.user_role (user_id, role_id) values (?, ?)
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.user_role (user_id, role_id) values (?, ?)
+2023-06-04 20:35:01 DEBUG AbstractCollectionPersister:384 - Done inserting collection: 3 rows inserted
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG JdbcCoordinatorImpl:170 - HHH000420: Closing un-released batch
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG SQL:144 - select * from portal.users
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 0
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 1
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 2
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 3
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 4
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 5
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 6
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 7
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 8
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 9
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 10
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 11
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 12
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 13
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 14
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 15
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 16
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 17
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 18
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 19
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 20
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 21
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 22
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 23
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG Loader:384 - Result set row: 24
+2023-06-04 20:35:01 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG ActionQueue:281 - Executing identity-insert immediately
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.drivers (license, nick) values (?, ?)
+2023-06-04 20:35:01 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 25
+2023-06-04 20:35:01 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Driver{nick=Speedy, cars=null, license=PLATINUM, id=25, user=null}
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:35:01 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:35:01 DEBUG ActionQueue:281 - Executing identity-insert immediately
+2023-06-04 20:35:01 DEBUG SQL:144 - insert into portal.cars (carClass, driver_id, model) values (?, ?, ?)
+2023-06-04 20:35:01 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 16
+2023-06-04 20:35:01 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2023-06-04 20:35:01 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 1 updates, 0 deletions to 2 objects
+2023-06-04 20:35:01 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 1 removals to 0 collections
+2023-06-04 20:35:01 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Driver{nick=Speedy, cars=null, license=PLATINUM, id=25, user=hilelll.hibernate.relationships.model.User#25}
+2023-06-04 20:35:01 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Car{driver=hilelll.hibernate.relationships.model.Driver#25, model=LAMBORGHINI, id=16, carClass=GT3}
+2023-06-04 20:35:01 DEBUG SQL:144 - update portal.drivers set license=?, nick=? where id=?
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:35:01 DEBUG JdbcCoordinatorImpl:170 - HHH000420: Closing un-released batch
