@@ -1,10 +1,52 @@
-2023-03-06 22:26:36 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
-2023-03-06 22:28:39 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
-2023-03-06 22:53:15 DEBUG PhoneController:15 - Phone(id=1, type=mobile, number=783423)
-2023-03-06 22:53:15 DEBUG PhoneService:12 - 783423
-2023-03-06 22:54:54 DEBUG PhoneController:15 - Phone(id=7, type=mobile, number=null)
-2023-03-06 22:54:54 ERROR PhoneController:17 - Phone Number isn NULL
-2023-03-06 22:54:54 DEBUG PhoneService:12 - 
-2023-03-07 19:58:20 DEBUG PhoneController:15 - Phone(id=7, type=mobile, number=null)
-2023-03-07 19:58:20 ERROR PhoneController:17 - Phone Number isn NULL
-2023-03-07 19:58:20 DEBUG PhoneService:12 - 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 16
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 17
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 18
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 19
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 20
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 21
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 22
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG Loader:384 - Result set row: 23
+2023-06-04 20:19:57 DEBUG Loader:1595 - Result row: 
+2023-06-04 20:19:57 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:19:57 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:19:57 DEBUG ActionQueue:281 - Executing identity-insert immediately
+2023-06-04 20:19:57 DEBUG SQL:144 - insert into portal.drivers (license, nick) values (?, ?)
+2023-06-04 20:19:57 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 24
+2023-06-04 20:19:57 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2023-06-04 20:19:57 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+2023-06-04 20:19:57 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:19:57 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Driver{nick=Speedy, cars=null, license=PLATINUM, id=24, user=null}
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG TransactionImpl:53 - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+2023-06-04 20:19:57 DEBUG TransactionImpl:81 - begin
+2023-06-04 20:19:57 DEBUG ActionQueue:281 - Executing identity-insert immediately
+2023-06-04 20:19:57 DEBUG SQL:144 - insert into portal.cars (carClass, driver_id, model) values (?, ?, ?)
+2023-06-04 20:19:57 DEBUG IdentifierGeneratorHelper:78 - Natively generated identity: 15
+2023-06-04 20:19:57 DEBUG ResourceRegistryStandardImpl:106 - HHH000387: ResultSet's statement was not registered
+2023-06-04 20:19:57 DEBUG TransactionImpl:98 - committing
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:140 - Processing flush-time cascades
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:193 - Dirty checking collections
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:114 - Flushed: 0 insertions, 1 updates, 0 deletions to 2 objects
+2023-06-04 20:19:57 DEBUG AbstractFlushingEventListener:121 - Flushed: 0 (re)creations, 0 updates, 1 removals to 0 collections
+2023-06-04 20:19:57 DEBUG EntityPrinter:110 - Listing entities:
+2023-06-04 20:19:57 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Car{driver=hilelll.hibernate.relationships.model.Driver#24, model=LAMBORGHINI, id=15, carClass=GT3}
+2023-06-04 20:19:57 DEBUG EntityPrinter:117 - hilelll.hibernate.relationships.model.Driver{nick=Speedy, cars=null, license=PLATINUM, id=24, user=hilelll.hibernate.relationships.model.User#24}
+2023-06-04 20:19:57 DEBUG SQL:144 - update portal.drivers set license=?, nick=? where id=?
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG LogicalConnectionManagedImpl:174 - Initiating JDBC connection release from afterTransaction
+2023-06-04 20:19:57 DEBUG JdbcCoordinatorImpl:170 - HHH000420: Closing un-released batch

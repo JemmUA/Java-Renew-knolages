@@ -37,5 +37,6 @@ public class Main {
             System.out.println(dt.getUkrainianTranslation());
             System.out.println(dt.getEnglishTranslation());
         }
+        System.out.println(DayTimes.values()[2]);
     }
 }

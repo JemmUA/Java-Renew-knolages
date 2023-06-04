@@ -9,12 +9,13 @@ import java.sql.Connection;
 public class Main {
     public static void main(String[] args) {
         /**
+         * Java Database Connectivity (JDBC)
          * STRUCTURE:
-         * Java Application
-         * JDBC APi
-         * Driver Manager
-         * Diver Driver Driver ...
-         * DB DB DB ...
+         *  Java Application
+         *  JDBC APi
+         *  Driver Manager
+         *  Diver Driver Driver ...
+         *  DB DB DB ...
          *
          * Interaction with database:
          * Statement, Prepared Statement, Callable Statement

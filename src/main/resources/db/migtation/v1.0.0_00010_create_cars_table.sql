@@ -1,4 +1,4 @@
-CREATE TABLE cars (
+CREATE TABLE car_shop.cars (
   id serial CONSTRAINT cars_pk PRIMARY KEY,
   model VARCHAR(55),
   vin_code VARCHAR(32),

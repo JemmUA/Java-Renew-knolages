@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migtation/v1.0.0_00010_create_cars_table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migtation/v1.0.0_00020_create_car_infos_table.sql" dialect="PostgreSQL" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/db/migtation/v1.0.0_00030_create_owners_table.sql" dialect="PostgreSQL" />
+  </component>
+</project>
